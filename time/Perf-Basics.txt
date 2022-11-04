@@ -1,0 +1,54 @@
+performance testing 
+#perf
+
+gather information about which subroutines consume the most time, in kernel in library in a program
+sudo perf record find /-xdev -name core >/dev/null 2>&1
+sudo perf report
+
+===========================================================================================
+
+Response time 
+
+   minimum
+        -> a response as fast as possible
+   deterministic
+        -> a response in the same amount of time, every time
+   deadline
+        -> a response in time-earlier may not have any additional value
+       
+       
+Throughput
+         Throughput tells you how much data was transferred from a source at any given time
+         and bandwidth tells you how much data could theoretically be transferred from a source at any given time
+         
+         database transactions per seconds
+         webpages served per minutes
+         bytes transferred per second
+         throughput and response time may compete
+         
+        
+completion time
+            a particular task that completes as soon as possible
+            
+            sw builds
+            qa run
+            
+other matrics
+
+    efficiency
+    scalability
+    power consumption
+    
+    
+#time sleep 2
+
+real(total time took to run) 
+user(cpu time)
+sys(kernel time)
+
+#operations per second
+
+
+
+
+         
