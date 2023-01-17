@@ -1,0 +1,35 @@
+splint -> is a static analysis tool for c/c++
+
+
+sudo apt-get install splint
+
+usage
+	splint ./a.out
+========================================================
+
+electric-fence -> to detect memory related errors
+
+sudo apt-get install electric-fence
+
+usage
+	gcc example.c -o example -lfence
+	./example
+	or
+	gcc example.c -o example
+	LD_PRELOAD=libefence.so ./example or export LD_PRELOAD=libefence.so then ./example
+
+========================================================
+valgrind -> memory error detection tool suite
+
+sudo apt-get install valgrind
+
+memcheck     it is for memory leak summary and it is default with valgrind
+cachegrind   no idea
+callgrind    no idea
+helgrind     thread realted error
+Drd          thread related error
+
+usage
+	valgrind --tool=memcheck ./a.out
+	replace memcheck wit other tools like helgrind etc
+
